@@ -1,0 +1,67 @@
+name: Build Profile Assets
+
+on:
+  schedule:
+    - cron: "0 1 * * *"        # 每天 UTC 01:00（北京时间 09:00）刷新
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate Contribution Snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            _site/snake/github-snake.svg?color_snake=#7aa2f7&color_dots=#e6e8ef,#c5cde3,#94a3d4,#6b80c4,#3b4266
+            _site/snake/github-snake-dark.svg?color_snake=#bb9af7&color_dots=#16161e,#282c42,#3b4a7a,#5f7bd0,#9ece6a
+
+      - name: Generate Profile Summary Cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          UTC_OFFSET: 8
+          THEME: "tokyonight"
+          AUTO_PUSH: false
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          mv profile-summary-card-output _site/
+          touch _site/.nojekyll
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
