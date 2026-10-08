@@ -23,15 +23,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Prepare output dir
+        run: mkdir -p _site/snake
+
       - name: Generate Contribution Snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            _site/snake/github-snake.svg?color_snake=#7aa2f7&color_dots=#e6e8ef,#c5cde3,#94a3d4,#6b80c4,#3b4266
+            _site/snake/github-snake.svg?color_snake=#3b5bdb&color_dots=#dfe3ec,#c2c9e0,#9aa6cf,#6c7fc0,#3d4670
             _site/snake/github-snake-dark.svg?color_snake=#bb9af7&color_dots=#16161e,#282c42,#3b4a7a,#5f7bd0,#9ece6a
 
-      - name: Generate Profile Summary Cards
+      - name: Summary Cards (dark · tokyonight)
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -41,10 +44,23 @@ jobs:
           THEME: "tokyonight"
           AUTO_PUSH: false
 
+      - name: Preserve dark output
+        run: |
+          mv profile-summary-card-output _site/profile-summary-card-output
+
+      - name: Summary Cards (light · nord_bright)
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          UTC_OFFSET: 8
+          THEME: "nord_bright"
+          AUTO_PUSH: false
+
       - name: Assemble site
         run: |
-          mkdir -p _site
-          mv profile-summary-card-output _site/
+          mv profile-summary-card-output/nord_bright _site/profile-summary-card-output/
           touch _site/.nojekyll
 
       - name: Setup Pages

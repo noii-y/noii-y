@@ -1,7 +1,10 @@
 <div align="center">
 
 <a href="https://github.com/noii-y">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&height=70&lines=FDE-AI%E5%89%8D%E6%B2%BF%E9%83%A8%E7%BD%B2%E5%B7%A5%E7%A8%8B%E5%B8%88" alt="FDE Typing SVG" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&height=70&lines=FDE-AI%E5%89%8D%E6%B2%BF%E9%83%A8%E7%BD%B2%E5%B7%A5%E7%A8%8B%E5%B8%88" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=3B5BDB&center=true&vCenter=true&width=600&height=70&lines=FDE-AI%E5%89%8D%E6%B2%BF%E9%83%A8%E7%BD%B2%E5%B7%A5%E7%A8%8B%E5%B8%88" alt="FDE Typing SVG" />
+  </picture>
 </a>
 
 [![Resume](https://img.shields.io/badge/Resume-在线简历-7AA2F7?style=for-the-badge)](https://noii-y.github.io/resume/)
@@ -42,40 +45,60 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://noii-y.github.io/noii-y/snake/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://noii-y.github.io/noii-y/snake/github-snake.svg" />
-    <img alt="github contribution snake" src="https://noii-y.github.io/noii-y/snake/github-snake-dark.svg" />
+    <img alt="github contribution snake" src="https://noii-y.github.io/noii-y/snake/github-snake.svg" />
   </picture>
 </p>
 
 ## 🔥 Streak
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=noii-y&theme=tokyonight&hide_border=true&disable_animations=true" alt="GitHub Streak" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=noii-y&theme=tokyonight&hide_border=true&disable_animations=true" />
+    <img alt="GitHub Streak" src="https://streak-stats.demolab.com?user=noii-y&theme=default&hide_border=true&disable_animations=true" />
+  </picture>
 </p>
 
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://noii-y.github.io/noii-y/profile-summary-card-output/tokyonight/3-stats.svg" alt="Stats" />
-  <img src="https://noii-y.github.io/noii-y/profile-summary-card-output/tokyonight/0-profile-details.svg" alt="Profile Details" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://noii-y.github.io/noii-y/profile-summary-card-output/tokyonight/3-stats.svg" />
+    <img alt="Stats" src="https://noii-y.github.io/noii-y/profile-summary-card-output/nord_bright/3-stats.svg" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://noii-y.github.io/noii-y/profile-summary-card-output/tokyonight/0-profile-details.svg" />
+    <img alt="Profile Details" src="https://noii-y.github.io/noii-y/profile-summary-card-output/nord_bright/0-profile-details.svg" />
+  </picture>
 </p>
 
 ## 💠 Languages
 
 <p align="center">
-  <img src="https://noii-y.github.io/noii-y/profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Repos per Language" />
-  <img src="https://noii-y.github.io/noii-y/profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Most Commit Language" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://noii-y.github.io/noii-y/profile-summary-card-output/tokyonight/1-repos-per-language.svg" />
+    <img alt="Repos per Language" src="https://noii-y.github.io/noii-y/profile-summary-card-output/nord_bright/1-repos-per-language.svg" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://noii-y.github.io/noii-y/profile-summary-card-output/tokyonight/2-most-commit-language.svg" />
+    <img alt="Most Commit Language" src="https://noii-y.github.io/noii-y/profile-summary-card-output/nord_bright/2-most-commit-language.svg" />
+  </picture>
 </p>
 
 ## 📈 Productive Time
 
 <p align="center">
-  <img src="https://noii-y.github.io/noii-y/profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Productive Time" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://noii-y.github.io/noii-y/profile-summary-card-output/tokyonight/4-productive-time.svg" />
+    <img alt="Productive Time" src="https://noii-y.github.io/noii-y/profile-summary-card-output/nord_bright/4-productive-time.svg" />
+  </picture>
 </p>
 
 <div align="center">
 
-![Visitors](https://api.visitorbadge.io/api/visitors?path=noii-y%2Fnoii-y&label=Visitors&labelColor=%231F2335&countColor=%237AA2F7&style=flat)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.visitorbadge.io/api/visitors?path=noii-y%2Fnoii-y&label=Visitors&labelColor=%231F2335&countColor=%237AA2F7&style=flat" />
+  <img alt="Visitors" src="https://api.visitorbadge.io/api/visitors?path=noii-y%2Fnoii-y&label=Visitors&labelColor=%23E5E9F0&countColor=%235E81AC&style=flat" />
+</picture>
 
 **Thanks for visiting! 🚀**
 
