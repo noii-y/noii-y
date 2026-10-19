@@ -39,6 +39,8 @@
 | 🦀 | [**灰迹输入法 Huiji**](https://github.com/noii-y/huiji) | 基于开源青简（GPL-3.0）的 Rust 智能拼音输入法，端侧离线整句、更强手误纠错 |
 | 🎯 | [**get-jobs-auto**](https://github.com/noii-y/get-jobs-auto) | FastAPI + DrissionPage + React 自动化求职投递，支持 Boss 直聘 / 51job / 智联 / 猎聘，无人值守 |
 | 🐹 | [**仓鼠美叽 MeiJi**](https://github.com/noii-y/MeiJi) | PySide6 + QMovie 真 GIF 动画的 Windows 桌面宠物 |
+| 🎨 | [**灰墨皮肤包 MoH_UI**](https://github.com/noii-y/moh-ui) | AI 生成后台的审美急救皮肤包：现成主题包 + 单文件组件，一句话换肤 |
+| 🏋️ | [**斑马健身房管理 gym-management-system**](https://github.com/noii-y/gym-management-system) | Spring Boot + Vue 前后端分离的健身房运营管理平台 |
 
 ## 🐍 Contribution Snake
 
