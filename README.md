@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 <a href="https://github.com/noii-y">
   <picture>
@@ -14,7 +14,7 @@
 
 ## 🙋 About Me
 
-- 🎯 **FDE · AI 前沿部署工程师**，专注企业 AI 项目落地与交付
+- 🎯 **FDE · AI 前沿部署工程师**，关注 AI 落地与效率工具
 - 🏢 现任 AI 交付工程师，统筹 10 人交付工程师团队
 - ⚙️ 喜欢把重复劳动自动化，工具省下来的时间都是自己的
 - 📍 中国 · 武汉
@@ -36,10 +36,10 @@
 
 |      | Project | Description |
 | :--: | :------ | :---------- |
-| 🦀 | [**灰迹输入法 Huiji**](https://github.com/noii-y/huiji) | 基于开源青简（GPL-3.0）的 Rust 智能拼音输入法，端侧离线整句、更强手误纠错 |
+| 🦀 | [**灰迹输入法 Huiji**](https://github.com/noii-y/huiji) | 基于开源青简（GPL-3.0）的 Rust 智能拼音输入法，端侧离线整句、手误纠错 |
 | 🎯 | [**get-jobs-auto**](https://github.com/noii-y/get-jobs-auto) | FastAPI + DrissionPage + React 自动化求职投递，支持 Boss 直聘 / 51job / 智联 / 猎聘，无人值守 |
 | 🐹 | [**仓鼠美叽 MeiJi**](https://github.com/noii-y/MeiJi) | PySide6 + QMovie 真 GIF 动画的 Windows 桌面宠物 |
-| 🎨 | [**灰墨皮肤包 MoH_UI**](https://github.com/noii-y/moh-ui) | AI 生成后台的审美急救皮肤包：现成主题包 + 单文件组件，一句话换肤 |
+| 🎨 | [**灰墨皮肤包 MoH_UI**](https://github.com/noii-y/moh-ui) | AI 生成后台的皮肤包：现成主题包 + 单文件组件，一句话换肤 |
 | 🏋️ | [**斑马健身房管理 gym-management-system**](https://github.com/noii-y/gym-management-system) | Spring Boot + Vue 前后端分离的健身房运营管理平台 |
 
 ## 🐍 Contribution Snake
